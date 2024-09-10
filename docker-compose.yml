@@ -10,12 +10,23 @@ services:
     networks:
       - testV2-network
 
+  # backend:
+  #   build: ./backend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - mongo
+  #   networks:
+  #     - testV2-network
+
   backend:
     build: ./backend
     ports:
       - "3000:3000"
     depends_on:
       - mongo
+    environment:
+      - MONGO_URI=mongodb+srv://itayrot2584:itayrot2584@users.ra7dxz2.mongodb.net/?retryWrites=true&w=majority&appName=users
     networks:
       - testV2-network
 
