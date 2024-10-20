@@ -14,11 +14,12 @@ import HelloWorld from "./components/HelloWorld.vue";
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="You  it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/users">UsersList</RouterLink>
       </nav>
     </div>
   </header>
