@@ -22,9 +22,8 @@ export default {
   },
   methods: {
     async getUsers() {
-      console.log("getting users");
       try {
-        const response = await axios.get("/api/users");
+        const response = await this.$axios.get("/users");
         this.users = response.data;
       } catch (error) {
         console.error("Error fetching users:", error);

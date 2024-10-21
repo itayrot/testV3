@@ -23,3 +23,4 @@ app.listen(3000, () => {
 
 const usersRouter = require('./routes/userRoutes.js');
 app.use('/users', usersRouter);
+
